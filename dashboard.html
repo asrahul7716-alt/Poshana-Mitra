@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Poshana Mitra</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Poshana Mitra</h1>
+            <div class="user-info">
+                <span id="user-name">Welcome, User</span>
+                <button id="logout-btn">Logout</button>
+            </div>
+            <div class="language-toggle">
+                <button id="lang-en">English</button>
+                <button id="lang-kn">ಕನ್ನಡ</button>
+            </div>
+        </header>
+        <main>
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                    <li><a href="meal-planner.html">Meal Planner</a></li>
+                    <li><a href="track-meals.html">Track Meals</a></li>
+                </ul>
+            </nav>
+            <div class="main-content">
+                <section class="welcome">
+                    <h2>Welcome to Your Dashboard</h2>
+                    <p>Here you can overview your child's nutritional intake and progress.</p>
+                </section>
+                <section class="summary-cards">
+                    <div class="card">
+                        <h3>Today's Intake</h3>
+                        <div id="today-intake">Loading...</div>
+                    </div>
+                    <div class="card">
+                        <h3>Nutritional Status</h3>
+                        <div id="nutrition-status">Loading...</div>
+                    </div>
+                    <div class="card">
+                        <h3>Upcoming Meal Plan</h3>
+                        <div id="upcoming-plan">Loading...</div>
+                    </div>
+                </section>
+                <section class="quick-actions">
+                    <h2>Quick Actions</h2>
+                    <button id="log-meal-btn">Log Today's Meals</button>
+                    <button id="view-plan-btn">View Weekly Meal Plan</button>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2026 Poshana Mitra. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="js/storage.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>
